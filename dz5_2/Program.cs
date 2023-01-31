@@ -1,9 +1,9 @@
-﻿int[] myArray = new int[5];
+﻿int[] myArray = new int[15];
 Random rnd = new Random();
 int res = 0;
 for (int i = 0; i < myArray.Length; i++)
 {
-    myArray[i] = rnd.Next(-9, 9);
+    myArray[i] = rnd.Next(-99, 99);
     Console.Write(myArray[i] + " ,");
 
 }
