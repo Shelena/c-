@@ -8,7 +8,7 @@ int[,] array2D = new int[m, n];
 void FillMyArray(
     int[,] array,
     Random rnd,
-    int min = 0,
+    int min = -100,
     int max = 100
 )
 {
@@ -41,7 +41,7 @@ int x = Convert.ToInt32(Console.ReadLine());
 int MyIndexI = x % 10;
 int MyIndexJ = x / 10;
 Console.WriteLine("элемент на " + MyIndexI + "строке, в " + MyIndexJ + "столбце");
-if (MyIndexI < n & MyIndexJ < m)
+if (MyIndexI < n - 1 & MyIndexJ < m - 1)
 {
     Console.WriteLine(array2D[MyIndexI - 1, MyIndexJ - 1]);
 }
