@@ -42,6 +42,7 @@ void GetResult(int[,] array)
         {
             for (int k = 0; k < array.GetLength(1); k++)
             {
+
                 if (array[i, j] <= array[i, k]) continue;
                 int buf = array[i, j];
                 array[i, j] = array[i, k];
